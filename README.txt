@@ -65,9 +65,17 @@ dependency graphs and it has been working great for me.
 
 === Phony
 
-It also defines a :phony task that you can use as a dependency. This
-allows file-based tasks to use non-file-based tasks as prerequisites
-without forcing them to rebuild. For example:
+It also defines a :phony task that you can use as a dependency. Rake
+has very strange notions on how file and non-file based tasks should
+interact. Specifically, file tasks use the timestamp of their
+dependencies to determine whether they should build. Task defines its
+timestamp to be the max its dependencies or Time.now if there are
+none. That forces a file task depending on a non-file-task to always
+build. 
+
+Depending on phony reverses this. This allows file-based tasks
+to use non-file-based tasks as prerequisites without forcing them to
+rebuild. For example:
 
     task :isolate => :phony
 

@@ -12,4 +12,9 @@ Hoe.spec "makerakeworkwell" do
   dependency "rake", "~> 0.9.2"
 end
 
+task :docs do
+  fonts = '"Courier New", Courier, monospace'
+  sh %(echo 'h1 { font-family: #{fonts}; }' >> doc/rdoc.css)
+end
+
 # vim: syntax=ruby
