@@ -3,7 +3,7 @@ gem "rake", "~> 0.9.2"
 require 'rake'
 
 module MakeRakeWorkWell
-  VERSION = "1.0.1"
+  VERSION = "1.0.2"
 end
 
 module Rake

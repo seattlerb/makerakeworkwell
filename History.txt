@@ -1,3 +1,13 @@
+=== 1.0.2 / 2013-02-16
+
+* 1 minor enhancement:
+
+  * Now compatible with rake 0.9.x up to 10.0.x
+
+* 1 bug fix:
+
+  * Fixed timestamp bug caused by rake 10.x changes to Task#timestamp.
+
 === 1.0.1 / 2012-06-22
 
 * 1 bug fix:
