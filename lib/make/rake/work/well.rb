@@ -1,4 +1,3 @@
-
 gem "rake", "~> 0.9.2"
 
 require 'rake'
@@ -24,7 +23,7 @@ module Rake
       @timestamp ||=
         if File.exist?(name)
           a = File.mtime(name.to_s)
-          b = super unless prerequisites.empty?
+          b = prerequisite_tasks.collect(&:timestamp).max
           [a, b].compact.max
         else
           Rake::EARLY
