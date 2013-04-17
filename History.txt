@@ -1,3 +1,9 @@
+=== 1.0.3 / 2013-04-16
+
+* 1 bug fix:
+
+  * Removed gem activation from the code. No longer needed.
+
 === 1.0.2 / 2013-02-16
 
 * 1 minor enhancement:
