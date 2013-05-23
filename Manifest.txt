@@ -4,4 +4,3 @@ Manifest.txt
 README.txt
 Rakefile
 lib/make/rake/work/well.rb
-test/test_makerakeworkwell.rb
