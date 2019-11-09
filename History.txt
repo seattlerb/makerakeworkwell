@@ -1,3 +1,9 @@
+=== 1.0.4 / 2019-11-09
+
+* 1 minor enhancement:
+
+  * Bumped up the dependency on rake to < 15.
+
 === 1.0.3 / 2013-04-16
 
 * 1 bug fix:
@@ -25,4 +31,3 @@
 * 1 major enhancement
 
   * Birthday!
-
