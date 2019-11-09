@@ -14,7 +14,7 @@ Hoe.spec "makerakeworkwell" do
     "rdoc" => "http://docs.seattlerb.org/makerakeworkwell",
   }
 
-  dependency "rake", [">= 0.9.2", "< 11"]
+  dependency "rake", [">= 0.9.2", "< 15"]
 end
 
 task :docs do
