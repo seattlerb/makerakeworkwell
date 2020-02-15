@@ -4,7 +4,7 @@
 = well
 
 home :: https://github.com/seattlerb/makerakeworkwell
-rdoc :: http://docs.seattlerb.org/makerakeworkwell
+doco :: http://docs.seattlerb.org/makerakeworkwell
 
 == DESCRIPTION:
 
